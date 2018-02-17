@@ -78,3 +78,26 @@ Para o *AllComponents* recomenda-se a sua utilização quando é necessário a v
 Baseado no cenário identificado, como sugeriria à sua empresa que cifrasse e decifrasse o(s) segredo(s), de modo a garantir confidencialidade, integridade e autenticidade do segredo e da sua etiqueta? Inclua, na sua resposta, o algoritmo, que utilizando a API, pediria à área de desenvolvimento para implementar, de modo a cifrar e decifrar o segredo.
 
 
+
+* Encoding:
+```
+chave é do tipo = dia.mes.ano
+def cifrar(mensagem):
+        segredo = encoding(mensagem,chave)
+        autenticacao = hmac(HMAC_SHA256_key,segredo)
+        cyphertext = segredo + autenticacao
+        return cyphertext
+```
+P.S: temos de ter em consideração que a chave já foi previamente acordada entre as duas entidades.
+
+* Decoding:
+O cyphertext tem de ser separado em dois pois precisamos de verificar através do Hmac se a autenticação é válida, se o resultado for positivo aí passamos à decifragem da mensagem enviada pela outra entidade.
+```
+def decifrar(cypertext):
+        autenticacao , segredo = separate(cyphertext) 
+        if (hmac(HMAC_SHA_256, segredo) == autenticacao)
+                decoding(segredo,chave)
+        else
+                print("Erro no processo de decifragem/cifragem da msg")
+```
+
