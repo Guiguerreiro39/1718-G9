@@ -45,3 +45,36 @@ s = utils.generateRandomData(secretLength - l)
                 secret += c
 ```
 É gerado uma string com um comprimento dado no input da função, e verifica-se se cada carater dessa string faz parte das letras ascii ou é um número. Se assim se tratar, significa que pode ser adicionado à string de retorno, justificando assim o facto do output apenas ser constituído por letras ou números.
+
+
+#### Pergunta P2.1
+
+Na diretoria das aulas (Aula2/ShamirSharing) encontra os ficheiros *createSharedSecret-app.py*, *recoverSecretFromComponents-app.py* e *recoverSecretFromAllComponents-app.py* baseado no módulo eVotUM.Cripto (https://gitlab.com/eVotUM/Cripto-py), já instalado na máquina virtual em /home/user/API/Cripto-py/eVotUM/Cripto.
+
+A. Analise e execute esses programas, indicando o que teve que efectuar para dividir o segredo "Agora temos um segredo muito confidencial" em 7 partes, com quorom de 3 para reconstruir o segredo.
+
+Note que a utilização deste programa é ``python createSharedSecret-app.py number_of_shares quorum uid private-key.pem`` em que:
++ number_of_shares - partes em que quer dividir o segredo
++ quorum - número de partes necessárias para reconstruir o segredo
++ uid - identificador do segredo (de modo a garantir que quando reconstruir o segredo, está a fornecer as partes do mesmo segredo)
++ private-key.pem - chave privada, já que cada parte do segredo é devolvida num objeto JWT assinado, em base 64
+
+B. Indique também qual a diferença entre recoverSecretFromComponents-app.py e recoverSecretFromAllComponents-app.py, e em que situações poderá ser necessário utilizar recoverSecretFromAllComponents-app.py em vez de recoverSecretFromComponents-app.py.
+
+#### Reposta P2.1 A
+
+Em primeiro lugar foi necessário criar o par de chaves que pode ser efetuado com o comando `openssl genrsa -aes128 -out mykey.pem 1024`. Com isto, foi adicionado o ficheiro *mykey.pem* à diretoria correspondente. De seguida efetua-se o comando ``python createSharedSecret-app.py 7 3 1 mykey.pem``, onde foi introduzido a mesmo passphrase que na geração da chave privada, assim como o segredo "Agora temos um segredo muito confidencial". 
+Para verificar se as 3 partes são necessárias para reconstruir o segredo, primeiramente cria-se o certificado associado à chave privada com o comando `openssl req -key mykey.pem -new -x509 -days 365 -out mykey.crt`, completando com toda a informação referente ao certificado que é pedida. Confirma-se que foi criado o ficheiro *mykey.crt*, referente ao certificado.
+O próximo passo é obter o segredo a partir das componentes com o comando `python recoverSecretFromComponents-app.py 3 1 mykey.pem`. Depois de introduzir as 3 componentes necessárias, chegamos à recuperação do segredo pretendido.
+
+#### Reposta P2.1 B
+
+A principal diferença encontrada entre os dois programas encontra-se no número de componentes necessários para reconstruir o segredo.
+Enquanto que no programa *recoverSecretFromAllComponents-app.py* o número de componentes é igual ao número de partes que foi dividido o segredo inicialmente, não é verdade para o programa *recoverSecretFromComponents-app.py*, onde existem um quorum, um número de partes necessárias para reconstruir o segredo, que pode ser diferente do número de partes da divisão inicial do segredo.
+Para o *AllComponents* recomenda-se a sua utilização quando é necessário a validação de todos os envolvidos. Já para o outro, pode haver, por exemplo, horários definidos em que o quorum é o número de pessoas disponíveis no momento da recuperação do segredo.
+
+
+#### Pergunta P3.1
+Baseado no cenário identificado, como sugeriria à sua empresa que cifrasse e decifrasse o(s) segredo(s), de modo a garantir confidencialidade, integridade e autenticidade do segredo e da sua etiqueta? Inclua, na sua resposta, o algoritmo, que utilizando a API, pediria à área de desenvolvimento para implementar, de modo a cifrar e decifrar o segredo.
+
+
