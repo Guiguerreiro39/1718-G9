@@ -65,7 +65,7 @@ B. Indique também qual a diferença entre recoverSecretFromComponents-app.py 
 
 Em primeiro lugar foi necessário criar o par de chaves que pode ser efetuado com o comando `openssl genrsa -aes128 -out mykey.pem 1024`. Com isto, foi adicionado o ficheiro *mykey.pem* à diretoria correspondente. De seguida efetua-se o comando ``python createSharedSecret-app.py 7 3 1 mykey.pem``, onde foi introduzido a mesmo passphrase que na geração da chave privada, assim como o segredo "Agora temos um segredo muito confidencial". 
 Para verificar se as 3 partes são necessárias para reconstruir o segredo, primeiramente cria-se o certificado associado à chave privada com o comando `openssl req -key mykey.pem -new -x509 -days 365 -out mykey.crt`, completando com toda a informação referente ao certificado que é pedida. Confirma-se que foi criado o ficheiro *mykey.crt*, referente ao certificado.
-O próximo passo é obter o segredo a partir das componentes com o comando `python recoverSecretFromComponents-app.py 3 1 mykey.pem`. Depois de introduzir as 3 componentes necessárias, chegamos à recuperação do segredo pretendido.
+O próximo passo é obter o segredo a partir das componentes com o comando `python recoverSecretFromComponents-app.py 3 1 mykey.crt`. Depois de introduzir as 3 componentes necessárias, chegamos à recuperação do segredo pretendido.
 
 #### Reposta P2.1 B
 
