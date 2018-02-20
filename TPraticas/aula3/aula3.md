@@ -62,7 +62,8 @@ Para procurarmos os servidores de empresas comerciais pesquisamos o seguinte `po
 * Vulnerabilidade mais alta: 7.8
 
 * Número de vulnerabilidades: 9
-![img1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/nvul1.png)
+
+[img1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/nvul1.png)
 
 
 #### Servidor 2:
@@ -82,7 +83,7 @@ Para procurarmos os servidores de empresas comerciais pesquisamos o seguinte `po
 * Vulnerabilidade mais alta: 5.0
 
 * Número de vulnerabilidades: 2
-![img2](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/nvul2.png)
+[img2](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/nvul2.png)
 
 
 ### Qual é a versão de software com mais vulnerabilidades?
