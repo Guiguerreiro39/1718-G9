@@ -53,7 +53,9 @@ Para procurarmos os servidores de empresas comerciais pesquisamos o seguinte `po
 > python ssh-audit.py ec2-35-177-213-122.eu-west-2.compute.amazonaws.com
 
 * Resultados ssh-audit:
-(prints)
+1. [Resultados Parte 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/serv1_1.png)
+2. [Resultados Parte 2](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/serv1_2.png)
+3. [Resultados Parte 3](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/serv1_3.png)
 
 * Software Servidor SSH: OpenSSH 7.2p2
 
@@ -63,7 +65,8 @@ Para procurarmos os servidores de empresas comerciais pesquisamos o seguinte `po
 
 * Número de vulnerabilidades: 9
 
-[img1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/nvul1.png)
+
+![img1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/nvul1.png)
 
 
 #### Servidor 2:
@@ -74,7 +77,10 @@ Para procurarmos os servidores de empresas comerciais pesquisamos o seguinte `po
 > python ssh-audit.py ec2-35-176-57-157.eu-west-2.compute.amazonaws.com
 
 * Resultados ssh-audit:
-(prints)
+1. [Resultados Parte 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/ser2_1.png)
+2. [Resultados Parte 2](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/ser2_2.png)
+3. [Resultados Parte 3](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/ser2_3.png)
+4. [Resultados Parte 4](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/ser2_4.png)
 
 * Software Servidor SSH: OpenSSH 7.4
 
@@ -83,17 +89,19 @@ Para procurarmos os servidores de empresas comerciais pesquisamos o seguinte `po
 * Vulnerabilidade mais alta: 5.0
 
 * Número de vulnerabilidades: 2
-[img2](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/nvul2.png)
 
 
-### Qual é a versão de software com mais vulnerabilidades?
+![img2](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/nvul2.png)
+
+
+#### Qual é a versão de software com mais vulnerabilidades?
 A versão do software que possui um maior número de vulnerabilidades é a versão 7.2 pois esta possui 9 enquanto que a versão 7.4 possui 2 vulnerabilidades.
 
 
-### Qual dessas versões tem a vulnerabilidade mais grave?
+#### Qual dessas versões tem a vulnerabilidade mais grave?
 A versão que possui a vulnerabilidade mais grave é a versão 7.2, tendo um rating de 7.8.
 
-### A vulnerabilidade indicada no ponto anterior é grave? Porque?
+#### A vulnerabilidade indicada no ponto anterior é grave? Porque?
 Sim, porque a função auth_password em auth-passord.c no SSHD no OpenSSH antes de 7.3 não limita os comprimentos da senha para a autenticação de senha, o que permite aos invasores remotos causarem uma negação de serviço(crypt CPU consumption) usando para isso uma string longa.
 
 
