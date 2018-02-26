@@ -166,7 +166,7 @@ def main(blindSignature, pRDashComponents):
 (...)
 ```
 
-## Assinante
+## Verificador
 
 - `verify-app.py`: Depois da obtenção da _Signature_, este ficheiro permite verificar essa mesma com o certificado gerado juntamente com a _PrivateKey_ do assinante bem como o resto dos componentes do requerente. Devolve uma mensagem de aprovação ou negação (dependendo do resultado da verificação) e leva como parâmetros o _Certificate_, a mensagem original (um ficheiro com uma mensagem escrita), a _Signature_ e a pasta criada para o requerente (a pasta é criada na pasta em que executar o código `python ofusca-app.py -msg <mensagem a assinar> -RDash <pRDashComponents>` com o nome **Req**).
 
