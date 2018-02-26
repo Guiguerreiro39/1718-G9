@@ -8,7 +8,7 @@ Pretende-se que altere o código fornecido para a experiência 1.2, de forma a s
 
 Os componentes necessários para a realização da assinatura cega foram guardados nas pastas **Signer** e **Req**, assinante e requerente respetivamente. As pastas são criadas automáticamente na execução.
 
-## Assinante
+#### Assinante
 
 - `init-app.py`: Inicialmente é necessário executar o código `python init-app.py -init` para criar as componentes iniciais _pRDashComponents_ e _initComponents_ como também a pasta **Signer** onde se irá guardar todos os ficheiros relativos ao assinante. Poderá ainda executar o ficheiro sem a flag **-init** para imprimir o **R'**, ou seja, o **pRDashComponents**. De realçar que é necessário inicializar as componentes antes de poder imprimir o **R'**.
 
@@ -86,7 +86,7 @@ def main(eccPrivateKeyPath, blindM):
 (...)
 ```
 
-## Remetente
+#### Remetente
 
 - `ofusca-app.py`: O objetivo deste ficheiro é de "ofuscar", ou seja, ocultar uma mensagem para depois ser enviada para o assinante sem esse saber o seu conteúdo. Aqui é também criada a pasta **Req** onde se irá guardar os ficheiros relativos ao requerente. Devolve a _BlindMessage_ e leva como parâmetros a mensagem a assinar e o _pRDashComponents_ anteriormente gerados pelo assinante.
 
@@ -166,7 +166,7 @@ def main(blindSignature, pRDashComponents):
 (...)
 ```
 
-## Verificador
+#### Verificador
 
 - `verify-app.py`: Depois da obtenção da _Signature_, este ficheiro permite verificar essa mesma com o certificado gerado juntamente com a _PrivateKey_ do assinante bem como o resto dos componentes do requerente. Devolve uma mensagem de aprovação ou negação (dependendo do resultado da verificação) e leva como parâmetros o _Certificate_, a mensagem original (um ficheiro com uma mensagem escrita), a _Signature_ e a pasta criada para o requerente (a pasta é criada na pasta em que executar o código `python ofusca-app.py -msg <mensagem a assinar> -RDash <pRDashComponents>` com o nome **Req**).
 
