@@ -40,7 +40,7 @@ No seguimento da experiência anterior, aceda a <http://zqktlwi4fecvo6ri.onion/w
 #### 2
 
 Para acedermos ao circuito, o utilizador começa por aceder ao DS (Directory Server) para obter informação sobre os IP (Introduction Points) e estabelecer uma chave com servidor. Depois de os IP's estarem escolhidos vai ser criado um circuito TOR até um RP (Rendezvous Point) para ser conectado com o serviço anónimo. Cada ligação entre um servidor/utilizador e um RP compreende 3 ORs intermédios (ex. no caso de zqktlwi4fecvo6ri.onion temos Germany: 144.76.253.229 -> United States: 192.81.132.46 -> Netherlands: 195.169.125.226). No caso de um utilizador querer aceder a um domínio .onion, antes vai aceder ao DS (Diretory Server) obtendo assim as informações sobre os IP's na qual o servidor se vai conectar.
-O serviço anónimo passa a ter conhecimento dos 3 OR's até ao RP, mas a partir desse ponto todos os saltos dados são rellay porque o utilizador não possuí nehuma informação sobre eles, mas pela figura apresentada acima podemos observar que temos 3 saltos rellay e podemos verificar assim que possuimos  (3 conhecidos  + 3 desconhecidos)6 saltos.
+O serviço anónimo passa a ter conhecimento dos 3 OR's até ao RP, mas a partir desse ponto todos os saltos dados são relay porque o utilizador não possuí nenhuma informação sobre eles, mas pela figura apresentada acima podemos observar que temos 3 saltos relay e podemos verificar assim que possuimos  (3 conhecidos  + 3 desconhecidos)6 saltos.
 Todo este processo indicado anteriormente pode ser verificado na imagem seguinte:
 
 
