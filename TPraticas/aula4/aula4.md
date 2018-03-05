@@ -35,6 +35,8 @@ No seguimento da experiência anterior, aceda a <http://zqktlwi4fecvo6ri.onion/w
 
 #### 1
 
+[Circuito para http://zqktlwi4fecvo6ri.onion/wiki/index.php/Main_Page ](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula4/onion)
+[Circuito para https://www.facebookcorewwwi.onion/ ](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula4/fb)
 
 #### 2
 
