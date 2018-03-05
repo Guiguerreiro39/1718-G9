@@ -38,6 +38,6 @@ No seguimento da experiência anterior, aceda a <http://zqktlwi4fecvo6ri.onion/w
 
 #### 2
 
-Para acedermos ao circuito, o utilizador começa por aceder ao DS (Directory Server) para obter informação sobre os IP (Introduction Points). Depois de os IP's estarem escolhidos vai ser criado um circuito TOR até um RP (Reduz Point) para ser conectado com o serviço anónimo. Cada ligação entre um servidor e um IP compreende 3 ORs intermédios (ex. no caso de zqktlwi4fecvo6ri.onion temos Germany: 144.76.253.229 -> United States: 192.81.132.46 -> Netherlands: 195.169.125.226). No caso de um utilizador quer aceder a um domínio .onion, antes vai aceder ao DS (Diretory Server) obtendo assim as informações sobre os IP's na qual o servidor se vai conectar. 
+Para acedermos ao circuito, o utilizador começa por aceder ao DS (Directory Server) para obter informação sobre os IP (Introduction Points). Depois de os IP's estarem escolhidos vai ser criado um circuito TOR até um RP (Reduz Point) para ser conectado com o serviço anónimo. Cada ligação entre um servidor e um IP compreende 3 ORs intermédios (ex. no caso de zqktlwi4fecvo6ri.onion temos Germany: 144.76.253.229 -> United States: 192.81.132.46 -> Netherlands: 195.169.125.226). No caso de um utilizador querer aceder a um domínio .onion, antes vai aceder ao DS (Diretory Server) obtendo assim as informações sobre os IP's na qual o servidor se vai conectar. 
 
 
