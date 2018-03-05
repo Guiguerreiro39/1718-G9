@@ -272,9 +272,9 @@ Para procurarmos os servidores de empresas comerciais pesquisamos o seguinte `po
 > python ssh-audit.py ec2-35-177-213-122.eu-west-2.compute.amazonaws.com
 
 * Resultados ssh-audit:
-1. [Resultados Parte 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/serv1_1.png)
-2. [Resultados Parte 2](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/serv1_2.png)
-3. [Resultados Parte 3](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/serv1_3.png)
+1. [Resultados Parte 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img_resposta3/serv1_1.png)
+2. [Resultados Parte 2](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img_resposta3/serv1_2.png)
+3. [Resultados Parte 3](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img_resposta3/serv1_3.png)
 
 * Software Servidor SSH: OpenSSH 7.2p2
 
@@ -285,7 +285,7 @@ Para procurarmos os servidores de empresas comerciais pesquisamos o seguinte `po
 * Número de vulnerabilidades: 9
 
 
-![img1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/nvul1.png)
+![img1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img_resposta3/nvul1.png)
 
 
 #### Servidor 2:
@@ -296,10 +296,10 @@ Para procurarmos os servidores de empresas comerciais pesquisamos o seguinte `po
 > python ssh-audit.py ec2-35-176-57-157.eu-west-2.compute.amazonaws.com
 
 * Resultados ssh-audit:
-1. [Resultados Parte 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/ser2_1.png)
-2. [Resultados Parte 2](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/ser2_2.png)
-3. [Resultados Parte 3](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/ser2_3.png)
-4. [Resultados Parte 4](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/ser2_4.png)
+1. [Resultados Parte 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img_resposta3/ser2_1.png)
+2. [Resultados Parte 2](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img_resposta3/ser2_2.png)
+3. [Resultados Parte 3](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img_resposta3/ser2_3.png)
+4. [Resultados Parte 4](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img_resposta3/ser2_4.png)
 
 * Software Servidor SSH: OpenSSH 7.4
 
@@ -310,7 +310,7 @@ Para procurarmos os servidores de empresas comerciais pesquisamos o seguinte `po
 * Número de vulnerabilidades: 2
 
 
-![img2](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img/nvul2.png)
+![img2](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula3/img_resposta3/nvul2.png)
 
 
 #### Qual é a versão de software com mais vulnerabilidades?
