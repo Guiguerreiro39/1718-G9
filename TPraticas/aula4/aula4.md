@@ -11,9 +11,7 @@ Para aceder a alguns sites nos EUA tem que estar localizado nos EUA.
 #### 1 
 Não, devido ao processo de aleatorização na seleção dos OR's que o TOR fornece. Pois, nada nos garante que o último OR esteja localizado nos EUA.
 
-Mas podemos obter um IP nos EUA se executarmos o comando ` sudo anonsurf change`  várias vezes e formos verificar ao site `  http://myiplocator.net/ `. Como não sabemos qual a sequência dos OR's nem o OR final da futura execução não podemos garantir que na próxima execução estamos localizados nos EUA.
-
-
+Mas podemos obter um IP nos EUA se executarmos o comando ` sudo anonsurf change`  várias vezes e formos verificar ao site `  http://myiplocator.net/ ` . Como não sabemos qual a sequência dos OR's nem o OR final da futura execução não podemos garantir que na próxima execução estamos localizados nos EUA.
 
 
 #### 2
@@ -35,12 +33,15 @@ No seguimento da experiência anterior, aceda a <http://zqktlwi4fecvo6ri.onion/w
 
 #### 1
 
-[Circuito para http://zqktlwi4fecvo6ri.onion/wiki/index.php/Main_Page ](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula4/onion.png)
+![Circuito para http://zqktlwi4fecvo6ri.onion/wiki/index.php/Main_Page ](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula4/img/onion.png)
 
-[Circuito para https://www.facebookcorewwwi.onion/ ](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula4/fb.png)
+![Circuito para https://www.facebookcorewwwi.onion/ ](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula4/img/fb.png)
 
 #### 2
 
 Para acedermos ao circuito, o utilizador começa por aceder ao DS (Directory Server) para obter informação sobre os IP (Introduction Points). Depois de os IP's estarem escolhidos vai ser criado um circuito TOR até um RP (Rendezvous Point) para ser conectado com o serviço anónimo. Cada ligação entre um servidor e um IP compreende 3 ORs intermédios (ex. no caso de zqktlwi4fecvo6ri.onion temos Germany: 144.76.253.229 -> United States: 192.81.132.46 -> Netherlands: 195.169.125.226). No caso de um utilizador querer aceder a um domínio .onion, antes vai aceder ao DS (Diretory Server) obtendo assim as informações sobre os IP's na qual o servidor se vai conectar. 
 
 
+
+
+![Diagrama](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula4/img/diag.png)
