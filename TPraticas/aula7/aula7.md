@@ -11,7 +11,7 @@ Os seguintes tópicos são o resultado obtido da análise do artigo nº5 do RGPD
 * Não deve ser permitido qualquer tipo de alteração nos dados de um utilizador sem o consentimento do próprio no desenvolvimento de um software.
 
 * As informações pessoais apenas podem ser utilizadas para as finalidades acordadas quando o detentor dessas informações aceitar os termos e condições. Em alguns casos, nem sempre funciona assim pois esses dados podem ser utilizados para fins científicos ou 
-estatísticos, ou mesmo para serem usados para fins de publicidade, sabendo se o detentor das informações é faz parte do público-alvo pretendido.
+estatísticos, ou mesmo para serem usados para fins de publicidade, sabendo se o detentor das informações faz parte do público-alvo pretendido.
 
 * Apenas devem ser pedidos os dados necessários e não é legal para o detentor do software pedir dados pessoais que não sejam necessários para o uso ou requesição desse software.
 
