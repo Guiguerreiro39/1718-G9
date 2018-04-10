@@ -35,8 +35,8 @@ Outros bugs podem não representar nenhuma vulnerabilidade para o software em ca
 
 #### Vulnerabilidades de Projeto:
 Esta vulnerabilidade é introduzida durante a fase de projeto do software(obtenção de requisitos e desenho).
-Por exemplo, quando estamos a planear o desenvolvimento de um software específico e se um intruso obter os requisitos e o desenho desse software pode ficar a saber como esse software vai implementado e pode ir tentando encontrar vulnerabilidades.
-Outro exemplo desta vulnerabilidade é um utilizador obter os requisitos e o desenho e usa-los para proveito próprio isto pode acontecer se uma empresa concorrente obter estes dados e tentar antecipar-se à outra empresa no lançamento desse produto para o mercado. 
+Por exemplo, quando estamos a planear o desenvolvimento de um software específico e se um intruso obter os requisitos e o desenho desse software pode ficar a saber como esse software vai ser implementado e pode ir tentando encontrar vulnerabilidades.
+Outro exemplo desta vulnerabilidade é um utilizador obter os requisitos e o desenho e usá-los para proveito próprio. Isto pode acontecer se uma empresa concorrente obter estes dados e tentar antecipar-se à outra empresa no lançamento desse produto para o mercado. 
 
 
 #### Vulnerabilidades de Codificação:
@@ -46,7 +46,9 @@ Outro exemplo é quando introduzimos um bug numa determinada funcionalidade de m
 
 
 #### Vulnerabilidades Operacionais:
-A vulnerabilidade é causada pelo ambiente no qual o software é executado ou pela sua execução.  
+A vulnerabilidade é causada pelo ambiente no qual o software é executado ou pela sua configuração.  
 
 
 ## Pergunta 1.3:
+Uma vulnerabilidade dia-zero identifica-se por serem aquelas vulnerabilidades que são encontradas e podem ser exploradas antes que os _developers_ tenham tempo para a resolver. 
+A origem do seu nome vem do facto que estas vulnerabilidades têm de ser resolvidas em menos de um dia desde a sua descoberta, ou seja, no dia zero, pois os _hackers_ podem-se aproveitar ao máximo deste tipo de vulnerabilidades antes que ele seja solucionada.
