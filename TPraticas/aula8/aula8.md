@@ -47,6 +47,8 @@ Outro exemplo é quando introduzimos um bug numa determinada funcionalidade de m
 
 #### Vulnerabilidades Operacionais:
 A vulnerabilidade é causada pelo ambiente no qual o software é executado ou pela sua configuração.  
+Por exemplo, ao configurarmos um certo software podemos apenas configura-lo não tendo em conta as configurações de segurança ficando esse software vulnerável.
+Outro exemplo é quando desensolvemos um determinado software num ambiente propício a ocorrerem falhas e fugas de informação, ou seja, esse ambiente é vulnárel. 
 
 
 ## Pergunta 1.3:
