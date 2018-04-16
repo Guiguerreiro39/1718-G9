@@ -10,7 +10,8 @@ probabilidade do ataque ter sucesso = nível da ameaça * grau de vulnerabilidad
 Considere um PC doméstico e um servidor de _homebanking_ de um Banco. Qual deles está está sujeito a um maior risco na Internet?
 Justifique, usando para tal a fórmula de cálculo de risco.
 
-#### Resposta 1.1:
+#### Resposta P1.1
+
 O que está sujeito a um maior risco na Internet é o servidor de homebanking de um Banco. 
 A probabilidade de o ataque ter sucesso num servidor de homebanking é menor do que a de um
 Pc doméstico, pois o servidor possui um nível de segurança elevado o que reduz o seu grau de vulnerabilidade
@@ -32,3 +33,11 @@ Considere que a aplicação A de uma empresa tem o nível de risco R. Quais os f
 1. Ao descobrirem e encarcerarem os cibercriminosos que ameaçavam a aplicação, há um fator que é afetado que é o nível de ameaça, pois significa que há menos entidades a tentarem fazer algo de prejudicial à aplicação, reduzindo este factor.
 
 2. A empresa ao descobrir e corrigir algumas vulnerabilidades, o fator do grau de vulnerabilidade irá, normalmente ser afetado. O grau de vulnerabilidade diminuirá pois existirão, presumivelmente, menos vulnerabilidades expostas para serem afetadas.
+
+### Pergunta P2.1
+
+Em que fase do modelo em cascata deve ser levada em linha de conta o regulamento europeu RGPD?
+
+### Resposta P2.1
+
+O regulamento europeu RGPD deve ser tomado em conta na fase de requisitos do modelo em cascata, pois é nessa fase que as regulamentações do RGPD são traduzidas em requisitos específicos para o desenvolvimento do software.
