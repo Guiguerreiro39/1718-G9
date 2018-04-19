@@ -49,3 +49,18 @@ Em que fase do modelo Microsoft Security Development Lifecycle deve ser levada e
 ### Resposta P.2.2:
 O regulamnto europeu RGPD deve ter tido em conta no modelo MSDL na fase de requisitos tal como no modelo em cascata.
 Pois é nessa fase onde se estabelecem os requisitos de segurança para cumprir o regulamento europeu RGPD.
+
+
+### Pergunta P2.3:
+1. Em que função de negócio, prática de segurança e actividade do SAMM deve ser levada em linha de conta o regulamento europeu RGPD?
+
+
+2. Em que nível de maturidade dessa prática de segurança tem de estar a empresa, para levar em conta o regulamento europeu RGPD nos seus projetos? Justifique.
+
+### Resposta 2.3:
+
+#### 1
+O regulamento europeu RGPD deve ser levado em conta na função de negócio 'Governance', na atividade do primeiro nível de maturidade que é a 'Identify and Monitor External Compliance Drivers' e na prática de segurança 'Policy & Complience'. Estas práticas de segurança verificam-se no 'Acess' (passo 2) o SAM onde se identifica e compreende a maturidade de cada uma das práticas de segurança.
+
+#### 2
+Para que uma empresa tenha em conta o regulamento europeu RGPD o desenvolvimento dos seus projetos, tem de estar no último nível de maturidade para que possam desenvolver os seus projetos de forma contínua e segura.
