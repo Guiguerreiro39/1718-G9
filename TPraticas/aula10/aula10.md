@@ -121,9 +121,13 @@ Compile e execute o programa 2-functions.c, e obtenha a mensagem de "Congratulat
 Indique os passos que efetuou para explorar a vulnerabilidade.
 
 
+
 ## Resposta 1.6: 
 
-Através do objdump -d analisou-se o endereço da função win. INCOMPLETO
+Depois de se ter compilado o programa, iniciou-se o programa com o gdb para se ter acesso ao endereço das variáveis e funções. Ao executar o comando *p win* acedeu-se ao endereço da função, que neste caso foi 0x555555554740. Convertendo isto para ASCII, e tendo em conta a arquitetura _little-endian_, fica UUUUG@. Preenchendo ainda os primeiros 72 bytes com informação aleatória, completa-se o resto com a string respetiva do endereço 72 bytes + UUUUG@ .
+Assim sendo, fica como input e respetivo input como mostra na seguinte figura, acedendo à função win:
+
+![WIN](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula10/img/per1.6.png)
 
 ## Pergunta 1.7:
 
@@ -133,4 +137,12 @@ Indique os passos que efetuou para explorar a vulnerabilidade.
 
 
 ## Resposta 1.7:
+
+Para explorar esta vulnerabilidade começou-se por analisar o código, que é muito parecido ao programa anterior. Ora, neste programa não existe a variável *fp*, logo temos de chamar a função *win* de outra forma. 
+Primeiramente, usando o gdb, encontrámos o endereço pretendido. Cria-se um pipe e injeta-se um código Perl para imprimir 72 bytes de informação mais esse mesmo endereço em formato hexadecimal no pipe criado.
+![Criação do pipe](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula10/img/pipe.png)
+
+Depois, usamos o pipe para correr o código Perl no gdb para assim aceder à função pretendida, obtendo a mensagem de "Congratulations" no ecrã.
+
+![Acesso à função com êxito](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula10/img/gdb.png)
 
