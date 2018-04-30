@@ -51,10 +51,11 @@ obter a mensagem "YOU WIN!!!".
 ## Resposta 1.3:
 No ficheiro RootExploit.c e no 0-simple.c a vulnerabilidade de buffer overflow deve-se pelo facto de a função gets não ter em conta o tamanho do imput.
 Mais concretamente no ficheiro RootExploit.c as permissões são dadas quando a password contém pelo menos 5 caracteres, como podemos verificar na imagem seguinte:
-METER IMAGEM
+![Execução de RootExploit](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula10/img/per1.3.PNG)
+
 
 Semelhante ao caso anterior, no ficheiro 0-simple.c temos que ter em conta que o tamanho do input tem de ser maior um caracterer que o tamanho do buffer, para podermos verificar a vulnerabilidade e a mensagem pretendida como mostra a imagem seguinte:
-METER IMAGEM
+![Execução de 0-simple](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula10/img/per1.3.2.PNG)
 
 
 ## Pergunta 1.4:
@@ -63,7 +64,7 @@ O que pode concluir?
 
 ## Resposta 1.4: 
 O programa ReadOverflow é responsável por fazer echo de um determinado número de caracteres previamente definidos pelo utilizador. Esse programa tem uma vulnerabilidade, a de fazer echo do número de caracteres que o utilizador escolheu, deixa-o intruduzir uma string do tamanho que quiser, mesmo que esse tamanho seja menor, sendo possível ler mais informação do que era suposto. Essa vulnerabilidade pode ser visualizada com a ajuda da imagem seguinte.
-METER IMAGEM
+![Execução ReadOverflow](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula10/img/perg1.4.PNG)
 
 
 ## Pergunta 1.5:
@@ -81,7 +82,7 @@ Para explorarmos vulnerabilidade efetuamos o passo seguinte:
 * Para conseguirmos obter a resposta, "you win" temos de alterar o valor da variável control para 0x61626364 de forma a entrar na condição verdadeira do ciclo.
 Ora em sistemas operativos UNIX a arquitetura é _little-endian_. Primeiramente constata-se quanto espaço é necessário preencher até ser possível alterar a variável pretendida. Depois transforma-se o valor do endereço de acordo com a tabela ASCII é abcd. Logo insere-se "lixo" como primeiros bytes seguido de "dcba", pois o formato é _little-endian_. Desta forma, consegue-se obter a mensagem pretendida no ecrã.
  
-
+![Execução do programa](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula10/img/per1.5.PNG)
 
 #### Little Endian e Big endian:
 São duas formas distintas de representação de um determinado tipo de dados. O little endian começa por representar primeiro o valor menos significativo até ao mais significativo, enquanto o big endian começa por representar o valor mais significativo até ao valor menos significativo.
