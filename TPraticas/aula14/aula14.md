@@ -6,16 +6,19 @@
 
 * O resultado obtido usando o nome Smith foi o seguinte:
 
+![Tópico 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/1.1.1.png)
 
 * A tautologia usada foi a seguinte: 'Smith OR 1=1' . E isso permitiu-nos obter a lista de todos os utilizadores 
 como podemos verificar na imagem seguinte.
 
+![Tópico 2](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/1.1.2.png)
 
 ### Pergunta 1.2
 
 Para realizarmos a Injection e obter todos os sítios que tem previsão do tempo disponível tivemos que acrescentar á query SQL a seguinte 
 tautoligia 'OR 1 = 1'. o resultado pode ser visualizado na imagem seguinte.
 
+![Tópico 2](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/1.2.png)
 
 ### Pergunta 1.3
 
