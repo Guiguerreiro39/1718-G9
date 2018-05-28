@@ -22,8 +22,9 @@ tautoligia 'OR 1 = 1'. o resultado pode ser visualizado na imagem seguinte.
 
 ### Pergunta 1.3
 
-Para alterarmos o valor do salário do utilizador 101 tivemos que executar o comando 'ID:101; set employee salary = 9999999'.
-(Falta tirar print da imagem)
+Para alterarmos o valor do salário do utilizador 101 tivemos que executar o comando 'ID:101; set employee salary = 19999'.
+
+![Tópico 3](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/1.3.png)
 
 ## XSS
 
