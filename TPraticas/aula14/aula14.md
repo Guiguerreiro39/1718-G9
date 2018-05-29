@@ -32,11 +32,11 @@ Para alterarmos o valor do salário do utilizador 101 tivemos que executar o com
 
 Verificou-se que, ao tentar utilizar os campos de quantidade na lista de compras, este alterava os caracteres especiais (< e >) como se vê na fígura.
 
-![Tópico 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/Screenshot from 2018-05-29 14-20-03.png)
+![Tópico 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/2.png)
 
 Nos campos seguintes, o credit card number e o digit access code, apesar de já não alterar caracteres especiais, não se conseguiu correr o script no campo do credit card number mas conseguiu-se com sucesso no campo do digit access code.
 
-![Tópico 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/Screenshot from 2018-05-29 14-20-29.png)
+![Tópico 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/1.png)
 
 
 ## Quebra na autenticação
