@@ -38,5 +38,15 @@ Nos campos seguintes, o credit card number e o digit access code, apesar de já 
 
 ![Tópico 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/1.png)
 
+![Tópico 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/3.png)
+
+## Experiência 2.2
+
+Conseguimos utilizar o script indicado no campo da mensagem para correr um script no browser de quem a for ler. É necessário o título da mensagem para que esta seja gravada.
+
+![Tópico 2](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/2.1.png)
+
+![Tópico 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/2.2.png)
+
 
 ## Quebra na autenticação
