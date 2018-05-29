@@ -28,7 +28,7 @@ Para alterarmos o valor do salário do utilizador 101 tivemos que executar o com
 
 ## XSS
 
-## Pergunta 2.1
+### Pergunta 2.1
 
 Verificou-se que, ao tentar utilizar os campos de quantidade na lista de compras, este alterava os caracteres especiais (< e >) como se vê na fígura.
 
@@ -40,7 +40,7 @@ Nos campos seguintes, o credit card number e o digit access code, apesar de já 
 
 ![Tópico 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/3.png)
 
-## Experiência 2.2
+### Experiência 2.2
 
 Conseguimos utilizar o script indicado no campo da mensagem para correr um script no browser de quem a for ler. É necessário o título da mensagem para que esta seja gravada.
 
@@ -50,3 +50,13 @@ Conseguimos utilizar o script indicado no campo da mensagem para correr um scrip
 
 
 ## Quebra na autenticação
+
+Um administrador normalmente usa usernames standard como admin. Ao experimentar este username descobrimos que existia e levou-nos à página da pergunta secreta.
+
+![Tópico 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/3.1.png)
+
+Ao fazermos brute force na resposta (experimentando várias cores), conseguimos descobrir que a resposta correta era green e com isso recuperar a password da conta do administrador.
+
+![Tópico 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/3.2.png)
+
+![Tópico 1](https://github.com/uminho-miei-engseg/1718-G9/blob/master/TPraticas/aula14/img/3.3.png)
